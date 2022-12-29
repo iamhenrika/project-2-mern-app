@@ -1,3 +1,8 @@
+*****
+For my final project within the Per Scholas Software Engineering course I will be completing a plant app using the MERN stack.
+*****
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
