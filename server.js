@@ -1,36 +1,65 @@
-const express = require('express');
-const path = require('path');
-const favicon = require('serve-favicon');
-const logger = require('morgan');
-const { createRequire } = require('module');
-
-require('dotenv').config()
-
-require("./config/database");
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
 
 const app = express();
-
-app.use(logger('dev'));
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
-app.use(favicon(path.join(__dirname, "build", "favicon.ico")))
-app.use(express.static(path.join(__dirname, "build")))
-app.use(require('./config/checkToken'))
+//DB configs
+mongoose
+  .connect("mongodb://localhost:27017/mypostsDB")
+  .catch((err) => console.log(err));
 
+const postSchema = mongoose.Schema({
+  title: String,
+  description: String,
+});
 
-app.use('/api/users', require('./routes/api/users'));
+const Post = mongoose.model("Post", postSchema);
 
-const ensureLoggedIn = require('./config/ensureLoggedIn');
-app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
-app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
+app.get("/", (req, res) => {
+  res.send("express is here");
+});
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"))
-})
+app.post("/create", (req, res) => {
+  const newPost = new Post({
+    title: req.body.title,
+    description: req.body.description,
+  });
 
-const PORT = process.env.PORT || 3001
+  newPost
+    .save()
+    .then((doc) => console.log(doc))
+    .catch((err) => console.log(err));
+});
 
-app.listen(PORT, () => {
-  console.log(`Express app is running on port: ${PORT}`)
-})
+app.get("/posts", (req, res) => {
+  Post.find()
+    .then((items) => res.json(items))
+    .catch((err) => console.log(err));
+});
 
+app.delete("/delete/:id", (req, res) => {
+  console.log(req.params);
+  Post.findByIdAndDelete({ _id: req.params.id })
+    .then((doc) => console.log(doc))
+    .catch((err) => console.log(err));
+});
+
+app.put("/update/:id", (req, res) => {
+  Post.findByIdAndUpdate(
+    { _id: req.params.id },
+    {
+      title: req.body.title,
+      description: req.body.description,
+    }
+  )
+    .then((doc) => console.log(doc))
+    .catch((err) => console.log(err));
+});
+
+app.listen(3001, function () {
+  console.log("Express server is running");
+});
