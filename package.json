@@ -2,7 +2,7 @@
   "name": "project-two-mern-app",
   "version": "1.0.0",
   "description": "blog",
-  "main": "index.js",
+  "main": "client/index.js",
   "scripts": {
     "build": "cd server && npm install  && cd ../client && npm install && npm run build",
     "start": "node server/server.js",
