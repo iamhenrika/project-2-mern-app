@@ -2,10 +2,10 @@
   "name": "project-two-mern-app",
   "version": "1.0.0",
   "description": "blog",
-  "main": "client/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "cd server && npm install  && cd ../client && npm install && npm run build",
-    "start": "node server/server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
