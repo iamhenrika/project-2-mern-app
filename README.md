@@ -1,5 +1,5 @@
 *****
-For my final project within the Per Scholas Software Engineering course I will be completing a plant app using the MERN stack. There have been a couple of ups and down but I've viewed several tutorials and started the project over.
+For my final project within the Per Scholas Software Engineering course I will be completing a plant blog app using the MERN stack. There have been a couple of ups and down but I've viewed several tutorials and started the project over.
 *****
 
 
