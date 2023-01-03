@@ -1,11 +1,11 @@
 {
-  "name": "blogged",
+  "name": "project-two-mern-app",
   "version": "1.0.0",
-  "description": "project-two-mern-app",
+  "description": "blog",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
-    "start": "node backend/server.js",
+    "build": "cd server && npm install  && cd ../client && npm install && npm run build",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
