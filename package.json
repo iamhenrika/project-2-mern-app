@@ -1,0 +1,21 @@
+{
+  "name": "blogged",
+  "version": "1.0.0",
+  "description": "project-two-mern-app",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamhenrika/project-two-mern-app"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/iamhenrika/project-two-mern-app/issues"
+  },
+  "homepage": "https://github.com/iamhenrika/project-two-mern-app#readme"
+}
