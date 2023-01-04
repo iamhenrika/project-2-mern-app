@@ -1,5 +1,21 @@
 *****
+
+render.com deployed site
+
+https://pro-api.onrender.com
+
+*I kept my frontend and backend files completed self-contained and I've been having the most difficult time getting the deployed site to behave in a proper manner. The project works while using a localhost and information is developed to my mongobd database without issue. I just cannot get it to function correctly in a deployed environment.
+
+*****
 For my final project within the Per Scholas Software Engineering course I will be completing a (film) blogging app (eventually) using the MERN stack. There have been a couple of ups and down but I've viewed several tutorials and started the project over a couple of times trying to implement the technics that I've learned.
+
+*****
+
+Checklist:
+
+https://trello.com/invite/b/Jv114bgG/ATTI347e108ffaaa39832de6924a0c2d40e130BECD78/project-two-mern-app
+
+*****
 
 https://www.youtube.com/watch?v=de-204MM0tU&list=PLs4co9a6NhMw7xB4xPSkSQRM8uQVAZak6
 
@@ -11,11 +27,7 @@ https://www.youtube.com/watch?v=TFGEq5OZgaA
 
 *****
 
-Checklist:
 
-https://trello.com/invite/b/Jv114bgG/ATTI347e108ffaaa39832de6924a0c2d40e130BECD78/project-two-mern-app
-
-*****
 
 
 
