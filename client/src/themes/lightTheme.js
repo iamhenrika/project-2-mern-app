@@ -3,14 +3,14 @@ import { createTheme } from "@mui/material";
 export default createTheme({
   palette: {
     primary: {
-      main: "#1fbfc1",
+      main: "#e7d07a",
     },
     secondary: {
       main: "#ffb300",
     },
     text: {
       light: "#f5f5f5",
-      primary: "#1fbfc1",
+      primary: "#e7d07a",
     },
   },
   components: {
@@ -43,7 +43,7 @@ export default createTheme({
         {
           props: { variant: "shaded" },
           style: {
-            backgroundColor: "#E0E0D9",
+            backgroundColor: "white",
             borderRadius: "10px",
           },
         },
@@ -71,21 +71,21 @@ export default createTheme({
     MuiList: {
       styleOverrides: {
         root: {
-          backgroundColor: "#E0E0D9",
+          backgroundColor: "white",
         },
       },
     },
     MuiListItemText: {
       styleOverrides: {
         root: {
-          color: "#1fbfc1",
+          color: "#6191b5",
         },
       },
     },
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          color: "#1fbfc1",
+          color: "#6191b5",
           backgroundColor: "white",
           borderRadius: "50%",
         },

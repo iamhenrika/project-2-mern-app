@@ -98,7 +98,7 @@ export default function PrimarySearchAppBar() {
         <IconButton size="large" color="inherit">
           <BookIcon />
         </IconButton>
-        <p>Blogs</p>
+        <p>Posts</p>
       </MenuItem>
       <MenuItem onClick={() => navigate("/profile")}>
         <IconButton size="large" color="inherit">
@@ -125,7 +125,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ color: "white", display: { xs: "none", sm: "block" } }}
           >
-            Blog
+            Much Ado About Nothing
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
