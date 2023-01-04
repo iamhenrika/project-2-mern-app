@@ -12,11 +12,11 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: DATABASE_URL
+      - key: MONGO_URI
         fromDatabase:
           name: blitzapp-db
           property: connectionString
-      - key: SESSION_SECRET_KEY
+      - key: JWT_SECRET
         generateValue: true
 
 databases:
