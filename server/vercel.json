@@ -1,13 +1,5 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "x-robots-tag",
-          "value": "index, follow"
-        }
-      ]
-    }
-  ]
+  "version": 2,
+  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }

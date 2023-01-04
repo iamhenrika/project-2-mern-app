@@ -26,7 +26,7 @@ export default function BlogCard(props) {
           size="small"
           onClick={() => navigate(`/blogs/${props.blog._id}`)}
         >
-          Read More
+          Continue...
         </Button>
       </CardActions>
     </Card>
