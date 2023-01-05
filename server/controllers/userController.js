@@ -6,6 +6,7 @@ const colors = require("colors");
 // @route   POST api/users/register
 // @desc    Register a user
 // @access  Public
+
 const registerUser = async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;

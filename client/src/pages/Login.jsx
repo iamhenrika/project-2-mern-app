@@ -68,11 +68,11 @@ export default function Login() {
         }}
       >
         <Avatar sx={{ m: 1, backgroundColor: "secondary.main" }}>
-          <LockOutlinedIcon/>
+          <LockOutlinedIcon />
         </Avatar>
 
         <Typography component="h1" variant="h5">
-         <Link to="/"> Login </Link>
+          <Link to="/"> Login </Link>
         </Typography>
 
         <Grid container spacing={2} sx={{ mt: 3 }}>

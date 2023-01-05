@@ -247,11 +247,7 @@ export default function NewBlog() {
           <Grid item>
             <Stack spacing={2} direction="row">
               <Button onClick={handleSave}>Save</Button>
-              <Button
-                id="clear"
-                variant="outlined"
-                onClick={(e) => setNewBlog({ title: "", content: "" })}
-              >
+              <Button onClick={(e) => setNewBlog({ title: "", content: "" })}>
                 Clear
               </Button>
               <Button onClick={() => navigate("/blogs")}>Cancel</Button>

@@ -22,6 +22,8 @@ nodejs
 mongodb
 express
 react hooks
+material-ui
+gsap
 
 ---
 

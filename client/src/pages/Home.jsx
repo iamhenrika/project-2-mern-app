@@ -50,7 +50,7 @@ export default function Home() {
   const handleRegister = () => {
     const { email, password } = user;
     if (!email || !password) {
-      toast("Please fill all the fields", { type: "error" });
+      toast("Please fill in all the fields", { type: "error" });
       return;
     }
     loginUser(user);
